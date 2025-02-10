@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Tech-Doc-Page</title>
+   <meta charset="utf-8"> 
+   <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+    <nav id="navbar">
+      <header>Python Basic Notes</header>
+      <ul>
+      <li><b><a class="nav-link" href="#python_notes">Python notes</a></b></li>
+      <li><b><a class="nav-link" href="#introduction_to_python">Introduction to python</a></b><//li>
+      <li><b><a class="nav-link" href="#module1">Module1</a></b></li>
+      <li><b><a class="nav-link" href="#module2">Module2</a></b></li>
+      <li><b><a class="nav-link" href="#module3">Module3</a></b></li>
+      <li><b><a class="nav-link" href="#module4">Module4</a></b></li>
+      <li><b><a class="nav-link" href="#module5">Module5</a></b></li>
+      <li><b><a class="nav-link" href="#reference">Reference</a></b></li>
+      </nav>
+    <main id="main-doc">
+      <section class="main-section" id="python_notes">
+        <header>Python notes</header>
+        <p>Welcome to Python Basics! This page is your gateway to mastering the fundamentals of Python programming.</p>
+        <p>Python is a high-level, interpreted, and general-purpose programming language. Python emphasizes code readability and simplicity, which makes it an excellent language for beginners and experienced developers. In this article, we’ve covered the basics of Python, from setting up your environment to writing your first program and understanding syntax, control flow, and functions.</p>
+        <li>Writing your first python program</li>
+        <li>Comments in python</li>
+        <li>Python Variable</li>
+        <li>Python Data Types</li>
+          <li>Python Input/Output</li>
+        <li>Python Operators</li>
+        <li>Python If Else</li>
+        <li>Python For &While loops</li>
+        <li>Python Functions</li>
+      </section>
+      <section class="main-section" id="introduction_to_python">
+        <header>Introduction to python</header>
+        <h3>Comments in python</h3>
+        <p>Comments in Python are the lines in the code that are ignored by the interpreter during the execution of the program. Also, Comments enhance the readability of the code and help the programmers to understand the code very carefully.
+</p>
+        <li># USE # for adding comments </li>
+        <li>
+# This is Python Comment</li>
+      </section>
+      <section class="main-section" id="module1">
+        <header>Module1</header>     <h3>Python variable</h3>
+        <p>Python Variable is containers that store values. Python is not “statically typed”. An Example of a Variable in Python is a representational name that serves as a pointer to an object. Once an object is assigned to a variable, it can be referred to by that name.</p>
+        <h4>Rules for Python variables</h4>
+        <li>A Python variable name must start with a letter or the underscore character.</li>
+        <li>A Python variable name cannot start with a number.</li>
+        <li>A Python variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).</li>
+        <li>Variable in Python names are case-sensitive (name, Name, and NAME are three different variables).</li>
+        <li>The reserved words(keywords) in Python cannot be used to name the variable in Python.</li>
+<code># An integer assignment
+age = 45
+
+# A floating point
+salary = 1456.8
+
+# A string
+name = "John"
+
+print(age)
+print(salary)
+print(name)</code>
+      </section>
+      <section class="main-section" id="module2">
+        <header>Module2</header>
+        <h3>Python Data Types</h3>
+        <p>Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. Since everything is an object in Python programming, data types are classes and variables are instances (objects) of these classes.</p>
+        <p><span>Example:</span> This code assigns variable ‘x’ different values of various data types in Python.</p>
+        <li>the Datatypes are given here</li>
+         <code>x = "Hello World" # string
+x = 50 # integer
+x = 60.5  # float
+x = 3j  # complex
+x = ["geeks", "for", "geeks"]  # list 
+x = ("geeks", "for", "geeks")  # tuple
+x = {"name": "Suraj", "age": 24} # dict
+x = {"geeks", "for", "geeks"} # set
+x = True  # bool
+x = b"Geeks" # binary</code>
+      </section>
+      <section class="main-section" id="module3">
+        <header>Module3</header>
+        <h3>Python Input/Output</h3>
+        <p>This function first takes the input from the user and converts it into a string. The type of the returned object always will be <class ‘str’>. It does not evaluate the expression it just returns the complete statement as String, and will print it</p>
+        <code># Python program show input and Output
+val = input("Enter your value: ") 
+print(val)</code>
+        <h3>Python Operators</h3>
+        <p>In Python programming, Operators in general are used to perform operations on values and variables. These are standard symbols used for the purpose of logical and arithmetic operations. In this article, we will look into different types of Python operators</p>
+        <h4>Arithmatic Operators</h4>
+        <p>Python Arithmetic operators are used to perform basic mathematical operations like addition, subtraction, multiplication, and division.</p>
+        <h4>Precedence of Arithmetic Operators</h4>
+        <li>P – Parentheses</li>
+        <li>E – Exponentiation</li>
+        <li>M – Multiplication (Multiplication and division have the same precedence)</li>
+        <li>D – Division</li>
+        <li>A – Addition (Addition and subtraction have the same precedence)</li>
+        <li>S – Subtraction</li>
+        <code>a = 9
+b = 4
+add = a + b 
+
+sub = a - b 
+
+mul = a * b 
+
+mod = a % b 
+
+p = a ** b 
+print(add) 
+print(sub) 
+print(mul) 
+print(mod) 
+print(p)</code>
+<h4>Logical Operators</h4>
+<p>Python Logical operators perform Logical AND , Logical OR , and Logical NOT operations. It is used to combine conditional statements.</p>
+<code>a = True
+b = False
+print(a and b) 
+print(a or b) 
+print(not a)</code>
+<h4>Bitwize Operators</h4>
+<p>Python Bitwise operators act on bits and perform bit-by-bit operations. These are used to operate on binary numbers.</p>
+<code>a = 10
+b = 4
+print(a & b) 
+print(a | b) 
+print(~a) 
+print(a ^ b) 
+print(a >> 2) 
+print(a << 2)</code>
+<h4>Assignment Operators</h4>
+<p>Python Assignment operators are used to assign values to the variables.</p>
+<code>a = 10
+b = a 
+print(b) 
+b += a 
+print(b) 
+b -= a 
+print(b) 
+b *= a 
+print(b) 
+b <<= a 
+print(b)</code>
+      </section>
+      <section class="main-section" id="module4">
+        <header>Module4</header>
+        <h3>Python If Else</h3>
+        <p>The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. But if we want to do something else if the condition is false, we can use the else statement with the if statement to execute a block of code when the if condition is false.</p>
+         <code>for i in range(0, 10, 2): 
+    print(i)</code>
+        <h3>Python For & While loops</h3>
+        <p>In this example, the condition for while will be True as long as the counter variable (count) is less than 3.</p>
+        <li>here is the code</li>
+        <code># Python program to illustrate while loop 
+count = 0
+while (count < 3): 
+    count = count + 1
+    print("Hello Geek")</code>
+    <h5>also see break ,continue and pass in python</h5>
+      </section>
+      <section class="main-section" id="module5">
+        <header>Module5</header>
+        <h3>Python Functions</h3>
+        <p>Python Functions is a block of statements that return the specific task. The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again.</p>
+        <p><span>Note:</span> There are mainly two types of functions in Python. </p>
+        <ol><li><span>Built-in library function:</span>These are  Standard functions  in Python that are available to use.</li>
+        <li> <span>User-defined function:</span> We can create our own functions based on our requirements. </li>
+        </ol>
+        <code># A simple Python function to check
+# whether x is even or odd
+def evenOdd(x):
+    if (x % 2 == 0):
+        print("even")
+    else:
+        print("odd")
+
+
+# Driver code to call the function
+evenOdd(2)
+evenOdd(3)</code>
+      </section>
+      <section class="main-section" id="reference">
+        <header>Reference</header>
+        <article class="container">
+          <ul>
+        <li>Here you will get the reference notes regarding python
+          <a href="https://www.geeksforgeeks.org/python-basics/" target="_blank">see more</a></li>
+          </ul>
+      </section>
+    </main>
+  </body>
+</html>
